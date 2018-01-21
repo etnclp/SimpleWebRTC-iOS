@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC6EBDDFC3AD669B6B4F314F /* Pods_SimpleWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04890E483F3FBDB9D9FA2BE8 /* Pods_SimpleWebRTC.framework */; };
+		FD1345E820149C7400426B77 /* Date+Milliseconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1345E720149C7400426B77 /* Date+Milliseconds.swift */; };
 		FD2A2DC72014986A00A68935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A2DC62014986A00A68935 /* AppDelegate.swift */; };
 		FD2A2DC92014986A00A68935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A2DC82014986A00A68935 /* ViewController.swift */; };
 		FD2A2DCC2014986A00A68935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2A2DCA2014986A00A68935 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		FD2A2DD12014986A00A68935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2A2DCF2014986A00A68935 /* LaunchScreen.storyboard */; };
 		FD2A2DDC2014986A00A68935 /* SimpleWebRTCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A2DDB2014986A00A68935 /* SimpleWebRTCTests.swift */; };
 		FD2A2DE72014986B00A68935 /* SimpleWebRTCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A2DE62014986B00A68935 /* SimpleWebRTCUITests.swift */; };
+		FD2A2DF7201498CD00A68935 /* WebRtcClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A2DF6201498CD00A68935 /* WebRtcClient.swift */; };
+		FD2A2DF9201498E900A68935 /* WebRtcUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A2DF8201498E900A68935 /* WebRtcUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04890E483F3FBDB9D9FA2BE8 /* Pods_SimpleWebRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleWebRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9CB844094E24A33758677F /* Pods-SimpleWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWebRTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC.release.xcconfig"; sourceTree = "<group>"; };
+		33388B56A7866F651F148C2C /* Pods-SimpleWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWebRTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC.debug.xcconfig"; sourceTree = "<group>"; };
+		FD1345E720149C7400426B77 /* Date+Milliseconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Milliseconds.swift"; sourceTree = "<group>"; };
 		FD2A2DC32014986A00A68935 /* SimpleWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2A2DC62014986A00A68935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD2A2DC82014986A00A68935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,8 @@
 		FD2A2DE22014986B00A68935 /* SimpleWebRTCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWebRTCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2A2DE62014986B00A68935 /* SimpleWebRTCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWebRTCUITests.swift; sourceTree = "<group>"; };
 		FD2A2DE82014986B00A68935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2A2DF6201498CD00A68935 /* WebRtcClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRtcClient.swift; sourceTree = "<group>"; };
+		FD2A2DF8201498E900A68935 /* WebRtcUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRtcUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6EBDDFC3AD669B6B4F314F /* Pods_SimpleWebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5960377E08B1AC811E22C18F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33388B56A7866F651F148C2C /* Pods-SimpleWebRTC.debug.xcconfig */,
+				1B9CB844094E24A33758677F /* Pods-SimpleWebRTC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F13C6239578601B289AE3113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04890E483F3FBDB9D9FA2BE8 /* Pods_SimpleWebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD2A2DBA2014986A00A68935 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				FD2A2DDA2014986A00A68935 /* SimpleWebRTCTests */,
 				FD2A2DE52014986B00A68935 /* SimpleWebRTCUITests */,
 				FD2A2DC42014986A00A68935 /* Products */,
+				5960377E08B1AC811E22C18F /* Pods */,
+				F13C6239578601B289AE3113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +127,12 @@
 		FD2A2DC52014986A00A68935 /* SimpleWebRTC */ = {
 			isa = PBXGroup;
 			children = (
-				FD2A2DC62014986A00A68935 /* AppDelegate.swift */,
-				FD2A2DC82014986A00A68935 /* ViewController.swift */,
 				FD2A2DCA2014986A00A68935 /* Main.storyboard */,
-				FD2A2DCD2014986A00A68935 /* Assets.xcassets */,
-				FD2A2DCF2014986A00A68935 /* LaunchScreen.storyboard */,
-				FD2A2DD22014986A00A68935 /* Info.plist */,
+				FD2A2DC82014986A00A68935 /* ViewController.swift */,
+				FD2A2DF6201498CD00A68935 /* WebRtcClient.swift */,
+				FD2A2DF8201498E900A68935 /* WebRtcUtil.swift */,
+				FDC194232014B87800F87207 /* Extensions */,
+				FD2A2DF5201498A300A68935 /* Supporting Files */,
 			);
 			path = SimpleWebRTC;
 			sourceTree = "<group>";
@@ -125,6 +155,25 @@
 			path = SimpleWebRTCUITests;
 			sourceTree = "<group>";
 		};
+		FD2A2DF5201498A300A68935 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD2A2DC62014986A00A68935 /* AppDelegate.swift */,
+				FD2A2DCD2014986A00A68935 /* Assets.xcassets */,
+				FD2A2DCF2014986A00A68935 /* LaunchScreen.storyboard */,
+				FD2A2DD22014986A00A68935 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDC194232014B87800F87207 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD1345E720149C7400426B77 /* Date+Milliseconds.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD2A2DEB2014986B00A68935 /* Build configuration list for PBXNativeTarget "SimpleWebRTC" */;
 			buildPhases = (
+				B19E0DBE6854874C2223B321 /* [CP] Check Pods Manifest.lock */,
 				FD2A2DBF2014986A00A68935 /* Sources */,
 				FD2A2DC02014986A00A68935 /* Frameworks */,
 				FD2A2DC12014986A00A68935 /* Resources */,
+				DD74BEA1DEC4AFBBB755DE92 /* [CP] Embed Pods Frameworks */,
+				FF21DEEE22C8E46A26118034 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +306,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B19E0DBE6854874C2223B321 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleWebRTC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD74BEA1DEC4AFBBB755DE92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/StarscreamSocketIO/StarscreamSocketIO.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StarscreamSocketIO.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF21DEEE22C8E46A26118034 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD2A2DBF2014986A00A68935 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2A2DF9201498E900A68935 /* WebRtcUtil.swift in Sources */,
 				FD2A2DC92014986A00A68935 /* ViewController.swift in Sources */,
+				FD2A2DF7201498CD00A68935 /* WebRtcClient.swift in Sources */,
 				FD2A2DC72014986A00A68935 /* AppDelegate.swift in Sources */,
+				FD1345E820149C7400426B77 /* Date+Milliseconds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,14 +537,18 @@
 		};
 		FD2A2DEC2014986B00A68935 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33388B56A7866F651F148C2C /* Pods-SimpleWebRTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9BHVUP9227;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SimpleWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.etnclp.SimpleWebRTC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etnclp.simplewebrtc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,14 +556,18 @@
 		};
 		FD2A2DED2014986B00A68935 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9CB844094E24A33758677F /* Pods-SimpleWebRTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9BHVUP9227;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SimpleWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.etnclp.SimpleWebRTC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etnclp.simplewebrtc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
